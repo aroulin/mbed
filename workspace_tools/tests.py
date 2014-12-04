@@ -917,6 +917,13 @@ TESTS = [
         "automated": False,
         "mcu": ["UBLOX_C027"],
     },
+    {
+        "id": "GSM_Parsing", "description": "Parsing AT-Command test",
+        "source_dir": join(TEST_DIR, "gsm", "parser"),
+        "dependencies": [MBED_LIBRARIES, TEST_MBED_LIB],
+        "automated": False,
+        "mcu": ["UBLOX_C027"],
+    },
 ]
 
 # Group tests with the same goals into categories
