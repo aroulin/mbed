@@ -1,6 +1,8 @@
 #ifndef __GSM_API_H__
 #define __GSM_API_H__
 
+typedef int bool;
+
 /**
  * Power on the GSM modem. When this function returns, the modem is ready to
  * receive AT-commands.
