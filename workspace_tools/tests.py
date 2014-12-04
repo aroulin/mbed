@@ -908,6 +908,15 @@ TESTS = [
         "automated": True,
         "host_test" : "detect_auto",
     },
+    
+    # Tests GSM
+    {
+        "id": "GSM_Basic", "description": "Basic AT-Command test",
+        "source_dir": join(TEST_DIR, "gsm", "basic"),
+        "dependencies": [MBED_LIBRARIES, TEST_MBED_LIB],
+        "automated": False,
+        "mcu": ["UBLOX_C027"],
+    },
 ]
 
 # Group tests with the same goals into categories
