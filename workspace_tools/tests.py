@@ -933,6 +933,20 @@ TESTS = [
         "automated": False,
         "mcu": ["UBLOX_C027"],
     },
+    {
+        "id": "GPS_ringBuffer", "description": "GPS ringBuffer test",
+        "source_dir": join(TEST_DIR, "gps", "ringBuffer"),
+        "dependencies": [MBED_LIBRARIES, TEST_MBED_LIB],
+        "automated": False,
+        "mcu": ["UBLOX_C027"],
+    },
+    {
+        "id": "GPS_Parsing", "description": "Parsing GPS NMEA packets",
+        "source_dir": join(TEST_DIR, "gps", "parser"),
+        "dependencies": [MBED_LIBRARIES, TEST_MBED_LIB],
+        "automated": False,
+        "mcu": ["UBLOX_C027"],
+    },
 ]
 
 # Group tests with the same goals into categories
