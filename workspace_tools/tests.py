@@ -924,6 +924,15 @@ TESTS = [
         "automated": False,
         "mcu": ["UBLOX_C027"],
     },
+
+	# Tests GPS
+    {
+        "id": "GPS_Basic", "description": "Basic GPS NMEA reception test",
+        "source_dir": join(TEST_DIR, "gps", "basic"),
+        "dependencies": [MBED_LIBRARIES, TEST_MBED_LIB],
+        "automated": False,
+        "mcu": ["UBLOX_C027"],
+    },
 ]
 
 # Group tests with the same goals into categories
