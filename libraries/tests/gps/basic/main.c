@@ -60,12 +60,5 @@ int main(void)
     serial_irq_handler(&serial_gps, &ISR_serial_gps, (uint32_t) &serial_gps);
     serial_irq_set(&serial_gps, RxIrq, 1);
 
-    // Enter command mode
-    wait(1);
-    serial_puts(&serial_gps, "+++");
-    wait(1);
-    // Disable DTE flow control
-    serial_puts(&serial_gps, "AT&K0\r");
-
     while(1);
 }
