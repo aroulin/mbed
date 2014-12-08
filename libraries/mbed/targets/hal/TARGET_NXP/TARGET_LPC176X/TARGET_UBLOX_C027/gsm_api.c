@@ -17,7 +17,6 @@ static volatile bool expectEndLF = 0;
 
 void ISR_serial_gsm(uint32_t id, SerialIrq event)
 {
-    //TODO precondition gsm should be ON
     if(event != RxIrq) {
         return;
     }
