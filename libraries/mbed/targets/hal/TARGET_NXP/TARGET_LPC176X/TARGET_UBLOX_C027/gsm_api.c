@@ -1,5 +1,5 @@
 #include "gsm_api.h"
-#include "c027_api.h"
+#include "C027_api.h"
 #include "serial_api.h"
 #include "wait_api.h"
 #include <stdio.h>
