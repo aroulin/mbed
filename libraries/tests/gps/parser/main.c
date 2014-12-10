@@ -3,7 +3,7 @@
 #include "wait_api.h"
 #include "us_ticker_api.h"
 #include "gps_api.h"
-#include "c027_api.h"
+#include "C027_api.h"
 
 static gpio_t led;
 static ticker_event_t ticker;
